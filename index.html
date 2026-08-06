@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aquinoz — Backend Developer</title>
     <meta name="description" content="Portfólio de Aquinoz, Backend Developer especialista em automação, APIs e infraestrutura." />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aquinozz.github.io/" />
+    <meta property="og:title" content="Aquinoz — Backend Developer" />
+    <meta property="og:description" content="Especialista em automação, APIs e infraestrutura backend. Cada projeto é uma missão vencida com foco em impacto prático e soluções escaláveis." />
+    <meta property="og:image" content="https://aquinozz.github.io/assets/hero-bg.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aquinoz — Backend Developer" />
+    <meta name="twitter:description" content="Especialista em automação, APIs e infraestrutura backend." />
+    <meta name="twitter:image" content="https://aquinozz.github.io/assets/hero-bg.jpg" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
@@ -29,13 +46,18 @@
 
         <ul id="nav-links" class="nav-links">
           <li><a id="nav-home" href="#hero" class="nav-link active">Início</a></li>
-          <li><a id="nav-about" href="#about" class="nav-link">Sobre</a></li>
-          <li><a id="nav-skills" href="#skills" class="nav-link">Skills</a></li>
-          <li><a id="nav-projects" href="#projects" class="nav-link">Projetos</a></li>
-          <li><a id="nav-education" href="#education" class="nav-link">Formação</a></li>
-          <li><a id="nav-experience" href="#experience" class="nav-link">Experiência</a></li>
-          <li><a id="nav-contact" href="#contact" class="nav-link">Contato</a></li>
+          <li><a id="nav-about" href="#about" class="nav-link" data-i18n="nav-about">Sobre</a></li>
+          <li><a id="nav-skills" href="#skills" class="nav-link" data-i18n="nav-skills">Skills</a></li>
+          <li><a id="nav-projects" href="#projects" class="nav-link" data-i18n="nav-projects">Projetos</a></li>
+          <li><a id="nav-education" href="#education" class="nav-link" data-i18n="nav-education">Formação</a></li>
+          <li><a id="nav-experience" href="#experience" class="nav-link" data-i18n="nav-experience">Experiência</a></li>
+          <li><a id="nav-contact" href="#contact" class="nav-link" data-i18n="nav-contact">Contato</a></li>
         </ul>
+
+        <button id="lang-toggle" class="lang-toggle" aria-label="EN">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span class="lang-current">EN</span>
+        </button>
       </div>
     </nav>
 
@@ -52,19 +74,19 @@
         <div class="hero-content">
           <span class="hero-tag clip-tag-r">▸ Take Your Heart</span>
           <h1 class="hero-name">Aquinoz</h1>
-          <p id="hero-role" class="hero-role">Backend Developer</p>
-          <p id="hero-desc" class="hero-desc">
+          <p id="hero-role" class="hero-role" data-i18n="hero-role">Backend Developer</p>
+          <p id="hero-desc" class="hero-desc" data-i18n="hero-desc">
             Especialista em automação, APIs e infraestrutura backend. Cada projeto é uma missão
             vencida com foco em impacto prático e soluções escaláveis.
           </p>
           <div class="hero-buttons">
             <a href="#projects" class="btn btn-primary">
-              <span id="projects-btn-text">Ver Projetos</span>
+              <span id="projects-btn-text" data-i18n="projects-btn-text">Ver Projetos</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </a>
             <a href="#contact" class="btn btn-outline">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-              <span id="contact-btn-text">Contato</span>
+              <span id="contact-btn-text" data-i18n="contact-btn-text">Contato</span>
             </a>
           </div>
         </div>
@@ -77,22 +99,22 @@
 
       <!-- ========== ABOUT ========== -->
       <section id="about" class="section section-alt">
-        <div class="section-bg-image" style="background-image: url('https://images4.alphacoders.com/938/thumb-1920-938303.jpg')"></div>
+        <div class="section-bg-image" style="background-image: url('./assets/hero-bg.jpg')"></div>
         <div class="section-bg-overlay"></div>
         <div class="section-bg-grid"></div>
         <div class="section-glow section-glow-tl"></div>
         <div class="container">
           <div class="section-header reveal">
             <span class="section-label">[ Phantom / dossier ]</span>
-            <h2 id="section-title-about" class="section-title">Sobre</h2>
+            <h2 id="section-title-about" class="section-title" data-i18n="section-title-about">Sobre</h2>
             <div class="section-divider"></div>
           </div>
 
           <div class="dialog-box reveal-left">
-            <h3 id="about-heading" class="dialog-heading">Quem é Aquinoz</h3>
-            <p id="about-text-1" class="dialog-text">Backend developer focado em automação, APIs e soluções escaláveis. A jornada começou com scripts simples e evoluiu para sistemas completos.</p>
-            <p id="about-text-2" class="dialog-text">Cada projeto representa uma missão vencida com foco em impacto prático. Tecnologias fortes, claras e escaláveis sustentam soluções reais.</p>
-            <p id="about-text-3" class="dialog-text">A jornada continua com novas ideias, desafios e melhorias. Sempre pronto para a próxima missão.</p>
+            <h3 id="about-heading" class="dialog-heading" data-i18n="about-heading">Quem é Aquinoz</h3>
+            <p id="about-text-1" class="dialog-text" data-i18n="about-text-1">Backend developer focado em automação, APIs e soluções escaláveis. A jornada começou com scripts simples e evoluiu para sistemas completos.</p>
+            <p id="about-text-2" class="dialog-text" data-i18n="about-text-2">Cada projeto representa uma missão vencida com foco em impacto prático. Tecnologias fortes, claras e escaláveis sustentam soluções reais.</p>
+            <p id="about-text-3" class="dialog-text" data-i18n="about-text-3">A jornada continua com novas ideias, desafios e melhorias. Sempre pronto para a próxima missão.</p>
             <div class="dialog-dots">
               <span class="dialog-dot"></span>
               <span class="dialog-dot"></span>
@@ -102,20 +124,20 @@
 
           <div class="stats-grid">
             <div class="stat-card reveal-zoom" style="transition-delay: 0s">
-              <div class="stat-value">5+</div>
-              <div id="stat-label-projects" class="stat-label">Projetos</div>
+              <div id="stat-number-projects" class="stat-value">4</div>
+              <div id="stat-label-projects" class="stat-label" data-i18n="stat-label-projects">Projetos</div>
             </div>
             <div class="stat-card reveal-zoom" style="transition-delay: 0.1s">
               <div class="stat-value">Java/Python</div>
-              <div id="stat-label-stack" class="stat-label">Stack Principal</div>
+              <div id="stat-label-stack" class="stat-label" data-i18n="stat-label-stack">Stack Principal</div>
             </div>
             <div class="stat-card reveal-zoom" style="transition-delay: 0.2s">
               <div class="stat-value">Backend</div>
-              <div id="stat-label-focus" class="stat-label">Foco</div>
+              <div id="stat-label-focus" class="stat-label" data-i18n="stat-label-focus">Foco</div>
             </div>
             <div class="stat-card reveal-zoom" style="transition-delay: 0.3s">
-              <div id="stat-value-availability" class="stat-value">Disponível</div>
-              <div id="stat-label-status" class="stat-label">Status</div>
+              <div id="stat-value-availability" class="stat-value" data-i18n="stat-value-availability">Disponível</div>
+              <div id="stat-label-status" class="stat-label" data-i18n="stat-label-status">Status</div>
             </div>
           </div>
         </div>
@@ -123,14 +145,14 @@
 
       <!-- ========== SKILLS ========== -->
       <section id="skills" class="section">
-        <div class="section-bg-image" style="background-image: url('https://images8.alphacoders.com/972/972773.jpg')"></div>
+        <div class="section-bg-image" style="background-image: url('./assets/skills-bg.jpg')"></div>
         <div class="section-bg-overlay"></div>
         <div class="section-bg-grid"></div>
         <div class="section-glow section-glow-br"></div>
         <div class="container">
           <div class="section-header reveal">
             <span class="section-label">[ phantom / arsenal ]</span>
-            <h2 id="section-title-skills" class="section-title">Habilidades</h2>
+            <h2 id="section-title-skills" class="section-title" data-i18n="section-title-skills">Habilidades</h2>
             <div class="section-divider"></div>
           </div>
 
@@ -140,14 +162,14 @@
 
       <!-- ========== PROJECTS ========== -->
       <section id="projects" class="section section-alt">
-        <div class="section-bg-image" style="background-image: url('https://wallpapercave.com/wp/wp5119602.jpg')"></div>
+        <div class="section-bg-image" style="background-image: url('./assets/projects-bg.jpg')"></div>
         <div class="section-bg-overlay"></div>
         <div class="section-bg-grid"></div>
         <div class="section-glow section-glow-top"></div>
         <div class="container">
           <div class="section-header reveal">
             <span class="section-label">[ phantom / missions ]</span>
-            <h2 id="section-title-projects" class="section-title">Projetos</h2>
+            <h2 id="section-title-projects" class="section-title" data-i18n="section-title-projects">Projetos</h2>
             <div class="section-divider"></div>
           </div>
 
@@ -156,7 +178,7 @@
           <div class="projects-footer reveal">
             <a href="https://github.com/Aquinozz" target="_blank" rel="noopener noreferrer" class="link-arrow">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-              <span id="projects-footer-text">Ver todos no GitHub</span>
+              <span id="projects-footer-text" data-i18n="projects-footer-text">Ver todos no GitHub</span>
             </a>
           </div>
         </div>
@@ -164,14 +186,14 @@
 
       <!-- ========== EDUCATION ========== -->
       <section id="education" class="section">
-        <div class="section-bg-image" style="background-image: url('https://i.redd.it/5hlaoaf2ser21.jpg')"></div>
+        <div class="section-bg-image" style="background-image: url('./assets/education-bg.jpg')"></div>
         <div class="section-bg-overlay"></div>
         <div class="section-bg-grid"></div>
         <div class="section-glow section-glow-bl"></div>
         <div class="container container-narrow">
           <div class="section-header reveal">
             <span class="section-label">[ phantom / archive ]</span>
-            <h2 id="section-title-education" class="section-title">Formação</h2>
+            <h2 id="section-title-education" class="section-title" data-i18n="section-title-education">Formação</h2>
             <div class="section-divider"></div>
           </div>
 
@@ -181,14 +203,14 @@
 
       <!-- ========== EXPERIENCE ========== -->
       <section id="experience" class="section section-alt">
-        <div class="section-bg-image" style="background-image: url('https://images.alphacoders.com/137/thumb-1920-1371097.jpeg')"></div>
+        <div class="section-bg-image" style="background-image: url('./assets/experience-bg.jpg')"></div>
         <div class="section-bg-overlay"></div>
         <div class="section-bg-grid"></div>
         <div class="section-glow section-glow-tr"></div>
         <div class="container container-narrow">
           <div class="section-header reveal">
             <span class="section-label">[ phantom / log ]</span>
-            <h2 id="section-title-experience" class="section-title">Experiência</h2>
+            <h2 id="section-title-experience" class="section-title" data-i18n="section-title-experience">Experiência</h2>
             <div class="section-divider"></div>
           </div>
 
@@ -198,28 +220,28 @@
 
       <!-- ========== CONTACT ========== -->
       <section id="contact" class="section">
-        <div class="section-bg-image" style="background-image: url('https://wallpaperaccess.com/full/1884159.jpg')"></div>
+        <div class="section-bg-image" style="background-image: url('./assets/contact-bg.jpg')"></div>
         <div class="section-bg-overlay"></div>
         <div class="section-bg-grid"></div>
         <div class="section-glow section-glow-center"></div>
         <div class="container">
           <div class="section-header section-header-center reveal">
             <span class="section-label">[ raven / signal ]</span>
-            <h2 id="section-title-contact" class="section-title">Contato</h2>
+            <h2 id="section-title-contact" class="section-title" data-i18n="section-title-contact">Contato</h2>
             <div class="section-divider section-divider-center"></div>
           </div>
 
           <div class="contact-layout">
             <div class="contact-info reveal-left">
-              <h3 id="contact-heading" class="contact-heading">Envie um sinal para a próxima missão.</h3>
-              <p id="contact-desc" class="contact-desc">
+              <h3 id="contact-heading" class="contact-heading" data-i18n="contact-heading">Envie um sinal para a próxima missão.</h3>
+              <p id="contact-desc" class="contact-desc" data-i18n="contact-desc">
                 Se quiser trocar ideias, discutir projetos ou iniciar uma colaboração, os caminhos
                 abaixo estão abertos como um chamado ao norte.
               </p>
               <div class="contact-status">
-                <div class="status-item"><span class="status-dot"></span><span id="contact-status-1">Disponível para Freelance Remoto</span></div>
-                <div class="status-item"><span class="status-dot"></span><span id="contact-status-2">Aberto para Colaborações</span></div>
-                <div class="status-item"><span class="status-dot"></span><span id="contact-status-3">Mensagens Diretas</span></div>
+                <div class="status-item"><span class="status-dot"></span><span id="contact-status-1" data-i18n="contact-status-1">Disponível para Freelance Remoto</span></div>
+                <div class="status-item"><span class="status-dot"></span><span id="contact-status-2" data-i18n="contact-status-2">Aberto para Colaborações</span></div>
+                <div class="status-item"><span class="status-dot"></span><span id="contact-status-3" data-i18n="contact-status-3">Mensagens Diretas</span></div>
               </div>
             </div>
 
@@ -232,8 +254,8 @@
                     <span class="phone-dot">●</span>
                   </div>
                   <div class="phone-header">
-                    <div class="phone-header-title">Contatos</div>
-                    <div class="phone-header-sub">Phantom Network</div>
+                    <div class="phone-header-title" data-i18n="phone-header-title">Contatos</div>
+                    <div class="phone-header-sub" data-i18n="phone-header-sub">Phantom Network</div>
                   </div>
                   <div id="phone-channels" class="phone-list"></div>
                   <div class="phone-footer">Take Your Heart</div>
@@ -268,6 +290,6 @@
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
     </button>
 
-    <script type="module" src="./main.js"></script>
+    <script defer src="./main.js"></script>
   </body>
 </html>
